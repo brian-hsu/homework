@@ -2,16 +2,16 @@ package com.train
 
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
     val scan = Scanner(System.`in`)
     println("Please enter number of tickets: ")
-    var ticket = scan.nextInt()
+    val ticket = scan.nextInt()
     println("How many round-trip tickets: ")
-    var trip = scan.nextInt()
+    val trip = scan.nextInt()
     TicketKt().tickets(ticket, trip)
 }
 
-class TicketKt() {
+class TicketKt {
     fun tickets(tickets:Int, roundTrip:Int) {
         println("Total tickets: $tickets")
         println("Round-trip: $roundTrip")

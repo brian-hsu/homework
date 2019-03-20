@@ -1,7 +1,7 @@
 package com.train;
 
-public class Ticket {
-    public Ticket(int tickets, int roundTrip) {
+class Ticket {
+    Ticket(int tickets, int roundTrip) {
         System.out.println("Total tickets: " + tickets);
         System.out.println("Round-trip: " + roundTrip);
         int tripSingle = (tickets - roundTrip) * 1000;
