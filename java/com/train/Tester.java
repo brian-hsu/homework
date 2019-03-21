@@ -10,6 +10,5 @@ public class Tester {
         System.out.println("How many round-trip tickets: ");
         int trip = scanner.nextInt();
         new Ticket(ticket, trip);
-
     }
 }
