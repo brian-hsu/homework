@@ -4,11 +4,14 @@ import java.util.*
 
 fun main() {
     val scan = Scanner(System.`in`)
-    println("Please enter number of tickets: ")
-    val ticket = scan.nextInt()
-    println("How many round-trip tickets: ")
-    val trip = scan.nextInt()
-    TicketKt().tickets(ticket, trip)
+    while (true) {
+        println("Please enter number of tickets: ")
+        val ticket = scan.nextInt()
+        if (ticket == -1) break
+        println("How many round-trip tickets: ")
+        val trip = scan.nextInt()
+        TicketKt().tickets(ticket, trip)
+    }
 }
 
 class TicketKt {
