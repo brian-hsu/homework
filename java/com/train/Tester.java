@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Tester {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int ticket = 0;
-        int trip = 0;
+        int ticket;
+        int trip;
         while (true) {
             System.out.println("Please enter number of tickets: ");
             ticket = scanner.nextInt();
